@@ -14,11 +14,13 @@ ENV PIP_NO_CACHE_DIR=1 \
 
 WORKDIR /opt/run8k
 
-# torch ставится отдельно с cu128-индекса (Blackwell/Ada и новее), затем остальное
-COPY requirements.txt .
-RUN pip install --upgrade pip && \
-    pip install torch torchvision --index-url ${TORCH_INDEX_URL} && \
-    pip install -r requirements.txt
+# torch ставится отдельно с cu128-индекса (Blackwell/Ada и новее) — отдельным
+# слоем, чтобы правки зависимостей не перекачивали torch.
+RUN pip install --upgrade pip
+RUN pip install torch torchvision --index-url ${TORCH_INDEX_URL}
+# Для прогона — отдельный лёгкий файл (без caveclient/ruff), pandas<3.
+COPY requirements-run.txt .
+RUN pip install -r requirements-run.txt
 
 # Код, конфиги, 8K-графы, метрики 2K (нужны для итоговых фигур 'all')
 COPY src ./src

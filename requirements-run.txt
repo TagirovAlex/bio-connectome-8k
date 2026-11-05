@@ -1,0 +1,19 @@
+# Минимальный набор зависимостей для 8K-прогона (scripts/03,04,05) внутри Docker.
+# Отличия от requirements.txt (локальная разработка):
+#   - БЕЗ caveclient (нужен только для скачивания данных/src/data/download.py).
+#   - БЕЗ ruff (линтер).
+#   - pandas понижен до 2.2.3 (caveclient требовал <3.0; здесь он отсутствует,
+#     но 2.2.3 надёжно совместим с numpy/scipy/matplotlib/seaborn во время прогона).
+# torch/torchvision ставятся отдельной командой с cu128-индекса ДО этого файла.
+torch-geometric==2.8.0.post1
+stable-baselines3==2.3.2
+gymnasium==0.29.1
+networkx==3.6.1
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.17.1
+matplotlib==3.11.2
+seaborn==0.13.2
+pyyaml==6.0.3
+python-louvain==0.16
+tqdm==4.67.3
