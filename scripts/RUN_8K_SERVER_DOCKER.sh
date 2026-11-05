@@ -28,7 +28,8 @@ REPO="${WORK}/repo"
 BRANCH="${BRANCH:-main}"
 IMAGE="${IMAGE:-run8k:latest}"
 NO_SHUTDOWN="${NO_SHUTDOWN:-0}"
-: "${REPO_URL:? задай REPO_URL (GitHub-адрес кода+данных)}"
+# По умолчанию — публичный репозиторий проекта (write возвращает через GIT_TOKEN).
+REPO_URL="${REPO_URL:-https://github.com/TagirovAlex/bio-connectome-8k.git}"
 PUSH_TO="${PUSH_TO:-${REPO_URL}}"
 OUT_DIR="${OUT_DIR:-}"
 

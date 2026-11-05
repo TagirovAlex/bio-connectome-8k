@@ -16,8 +16,10 @@
 
 ## Быстрый старт (сервер Debian 13, 96 ГБ)
 ```bash
-REPO_URL="https://github.com/TagirovAlex/bio-connectome-8k.git" \
+# Репозиторий по умолчанию уже задан в скрипте.
 GIT_TOKEN="ghp_..." \
 bash scripts/RUN_8K_SERVER_DOCKER.sh 2>&1 | tee /opt/run8k/console.log
 ```
-Собирает образ, обучает 8K, пушит `results/` обратно в репозиторий и выключает машину.
+Собирает образ из `https://github.com/TagirovAlex/bio-connectome-8k`, обучает 8K,
+пушит `results/` обратно в репозиторий (`GIT_TOKEN` — PAT с правом `repo`) и
+выключает машину.
