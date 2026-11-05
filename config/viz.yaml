@@ -1,0 +1,20 @@
+﻿dpi: 300
+figsize_wide: [10, 4]
+figsize_square: [6, 6]
+font_family: "DejaVu Sans"
+font_size_axis: 12
+font_size_title: 14
+font_size_legend: 10
+colors:
+  bio_signed: "#1f77b4"
+  rewired: "#ff7f0e"
+  random_er: "#2ca02c"
+  bio_unsigned: "#d62728"
+  mlp: "#9467bd"
+line_styles:
+  bio_signed: "-"
+  rewired: "--"
+  random_er: ":"
+  bio_unsigned: "-."
+  mlp: "-"
+ci: 0.95

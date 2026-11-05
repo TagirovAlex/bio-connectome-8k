@@ -1,0 +1,42 @@
+﻿flywire_version: "v783"
+visual_regions: ["LA", "ME", "LO", "LOP"]
+# Моторные нейроны. Проверено на реальных данных FlyWire v783:
+#   super_class == "motor"           -> 110 узлов
+#   class == "brain_motor_neuron"    -> 106 узлов (подмножество motor)
+#   class == "motor"                 -> 0 узлов
+# motor_by = "super_class": искать motor_class в колонке super_class;
+# motor_extra_classes: дополнительные классы из колонки class.
+# Оба критерия дают >0 — берём объединение (110 узлов).
+motor_class: "motor"
+motor_by: "super_class"
+motor_extra_classes: ["brain_motor_neuron"]
+# Сопоставление сокращений nt_type из connections.csv (ACH/GLUT/GABA/OCT/SER/DA)
+# с полными именами из neuron_annotations.csv. Нормализация нечувствительна
+# к регистру. Знаковые веса: excitatory_nt -> +syn_count, inhibitory_nt -> -syn_count.
+nt_map:
+  ACH: "acetylcholine"
+  GLUT: "glutamate"
+  GABA: "GABA"
+  OCT: "octopamine"
+  SER: "serotonin"
+  DA: "dopamine"
+excitatory_nt: ["acetylcholine", "glutamate"]
+inhibitory_nt: ["GABA"]
+scales:
+  2k:
+    target_nodes: 2000
+    selection: "largest_weak_component_then_top_degree"
+  8k:
+    target_nodes: 8000
+    selection: "all_visual_plus_motor"
+variants:
+  bio:
+    signed: true
+  rewired:
+    method: "maslov_sneppen"
+    n_swaps: 10
+  random_er:
+    method: "erdos_renyi"
+    preserve_density: true
+  unsigned:
+    signed: false

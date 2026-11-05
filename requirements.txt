@@ -1,0 +1,17 @@
+﻿torch==2.11.0
+# RTX 5060 Ti (Blackwell sm_120) требует CUDA 12.8+ wheels:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch-geometric==2.8.0.post1
+stable-baselines3==2.3.2
+gymnasium==0.29.1
+networkx==3.6.1
+numpy==2.4.6
+pandas==3.0.1
+scipy==1.17.1
+matplotlib==3.11.2
+seaborn==0.13.2
+pyyaml==6.0.3
+caveclient==8.2.1
+tqdm==4.67.3
+ruff==0.6.4
+python-louvain==0.16

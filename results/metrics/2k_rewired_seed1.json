@@ -1,0 +1,57 @@
+{
+  "run_id": "rewired_2k_seed1",
+  "graph": "rewired_2k",
+  "architecture": "rewired",
+  "seed": 1,
+  "tasks": [
+    "task1_goto",
+    "task2_avoid"
+  ],
+  "results": {
+    "task1_goto": {
+      "reward_after_task1": 5.121431782851716,
+      "final_reward": 3.904153956850609,
+      "reward_after_task2": 3.904153956850609,
+      "forgetting": 1.2172778260011072,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        -943.1787105047687,
+        -280.4284617518895,
+        -1.2132456831561693,
+        3.525170984104649,
+        -3.4506038585645253,
+        3.6306833943777854,
+        1.2174677573579789,
+        4.664791887608023,
+        4.063757563188454,
+        4.352515999088369,
+        3.001750000829943
+      ],
+      "timesteps": 200000
+    },
+    "task2_avoid": {
+      "reward_after_task2": 3.9218006742938676,
+      "final_reward": 3.9218006742938676,
+      "forward_transfer": null,
+      "forward_transfer_steps": null,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        3.2936003975921344,
+        3.3593764688905816,
+        3.787115517347047,
+        2.549858162553122,
+        3.1520263924411487,
+        2.460752759023387,
+        3.239518786000823,
+        0.7619731154012742,
+        4.582521329999535,
+        1.7604536465498977
+      ],
+      "timesteps": 200000
+    }
+  },
+  "config_hash": "7d6f4e48",
+  "timestamp": "2026-11-03T21:50:46.557531+00:00",
+  "scale": "2k",
+  "elapsed_seconds": 12068.197714567184
+}

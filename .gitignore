@@ -1,0 +1,15 @@
+# GitHub-репозиторий 8K: только нужное для прогона.
+data/raw/
+data/processed/*_2k.pt
+data/processed/uuid_cache/
+results/figures/
+results/logs/
+results/checkpoints/
+results/metrics/8k_*.json
+scripts/2k_runs/
+.venv/
+__pycache__/
+*.pyc
+temp/
+.ruff_cache/
+wandb/

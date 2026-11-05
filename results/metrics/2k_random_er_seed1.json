@@ -1,0 +1,57 @@
+{
+  "run_id": "random_er_2k_seed1",
+  "graph": "random_er_2k",
+  "architecture": "random_er",
+  "seed": 1,
+  "tasks": [
+    "task1_goto",
+    "task2_avoid"
+  ],
+  "results": {
+    "task1_goto": {
+      "reward_after_task1": 4.554522661161514,
+      "final_reward": 6.4038431566072145,
+      "reward_after_task2": 6.4038431566072145,
+      "forgetting": -1.8493204954457,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        -1445.8842258259833,
+        -0.1510050669879836,
+        5.278262080836386,
+        3.7980840592329415,
+        4.931165056362129,
+        3.3564397154061836,
+        5.60524284686279,
+        6.096646326219383,
+        5.462074507630764,
+        5.24951182630005,
+        4.6226347678764474
+      ],
+      "timesteps": 200000
+    },
+    "task2_avoid": {
+      "reward_after_task2": 3.096875915443944,
+      "final_reward": 3.096875915443944,
+      "forward_transfer": null,
+      "forward_transfer_steps": null,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        4.902009984300865,
+        3.6063535748788293,
+        4.858441148102732,
+        2.930182846058941,
+        4.127580268832561,
+        1.4749210947061309,
+        4.941801289622873,
+        3.3124282396954063,
+        4.74823796790974,
+        5.937653512853197
+      ],
+      "timesteps": 200000
+    }
+  },
+  "config_hash": "b097c956",
+  "timestamp": "2026-09-18T09:17:47.019910+00:00",
+  "scale": "2k",
+  "elapsed_seconds": 6174.976405143738
+}
