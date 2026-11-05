@@ -26,7 +26,7 @@ BRANCH="${BRANCH:-main}"
 IMAGE="${IMAGE:-run8k:latest}"
 NO_SHUTDOWN="${NO_SHUTDOWN:-0}"
 SHUTDOWN_ON_ERROR="${SHUTDOWN_ON_ERROR:-0}"
-REPO_URL="${REPO_URL:-https://github.com/TagirovAlex/bio-connectome-8k.git}"
+REPO_URL="${REPO_URL:-https://github.com/TagirovAlex/bio-connectome-cl.git}"
 PUSH_TO="${PUSH_TO:-${REPO_URL}}"
 OUT_DIR="${OUT_DIR:-}"
 

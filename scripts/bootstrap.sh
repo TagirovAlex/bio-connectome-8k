@@ -2,7 +2,7 @@
 # =============================================================================
 # bootstrap.sh — единая команда запуска на 96GB-сервере (Debian 13).
 #
-#   bash <(curl -fsSL https://raw.githubusercontent.com/TagirovAlex/bio-connectome-8k/main/bootstrap.sh) <GIT_TOKEN>
+#   bash <(curl -fsSL https://raw.githubusercontent.com/TagirovAlex/bio-connectome-cl/main/bootstrap.sh) <GIT_TOKEN>
 #
 # Делает: (1) ставит git+curl, если их нет; (2) клонирует репозиторий;
 # (3) запускает RUN_8K_SERVER_DOCKER.sh (docker+nvidia -> build -> train 8K
@@ -19,7 +19,7 @@ if [ -z "${TOKEN}" ]; then
     echo "[bootstrap] Использование: <curl ...bootstrap.sh> <GIT_TOKEN>" >&2
 fi
 
-REPO_URL="${REPO_URL:-https://github.com/TagirovAlex/bio-connectome-8k.git}"
+REPO_URL="${REPO_URL:-https://github.com/TagirovAlex/bio-connectome-cl.git}"
 WORK="${WORK:-/opt/run8k}"
 BRANCH="${BRANCH:-main}"
 

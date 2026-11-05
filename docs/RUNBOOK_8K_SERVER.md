@@ -5,7 +5,7 @@
 машину). Окружение и данные упакованы в Docker-образ; на сервере ничего не нужно,
 кроме docker + nvidia драйвера.
 
-Репозиторий: `https://github.com/TagirovAlex/bio-connectome-8k` (публичный).
+Репозиторий: `https://github.com/TagirovAlex/bio-connectome-cl` (публичный).
 
 ## Состав репозитория
 
@@ -23,7 +23,7 @@
 host RUN_8K_SERVER_DOCKER.sh
   1. apt: git/curl/ca-certificates/docker.io
   2. nvidia-container-toolkit (для --gpus)
-  3. git clone https://github.com/TagirovAlex/bio-connectome-8k
+  3. git clone https://github.com/TagirovAlex/bio-connectome-cl
   4. docker build -t run8k:latest .
   5. docker run --rm --gpus all -v $REPO/results:/opt/run8k/results run8k
        -> внутри: 03_run_8k (bio,rewired; 200K шагов×2) -> 04_analyze 8k
@@ -41,7 +41,7 @@ host RUN_8K_SERVER_DOCKER.sh
 ```bash
 GIT_TOKEN="ghp_..." bash scripts/RUN_8K_SERVER_DOCKER.sh 2>&1 | tee /opt/run8k/console.log
 ```
-- `REPO_URL` по умолчанию = `https://github.com/TagirovAlex/bio-connectome-8k.git`.
+- `REPO_URL` по умолчанию = `https://github.com/TagirovAlex/bio-connectome-cl.git`.
 - `GIT_TOKEN` — PAT со scope `repo` для записи результатов обратно в репозиторий.
   Альтернатива: задай `PUSH_TO` как ssh-remote с deploy-ключом (write).
 - После того как в GitHub-репо появились `results/8k_*`, `8k_summary.json`,
@@ -57,7 +57,7 @@ GIT_TOKEN="ghp_..." bash scripts/RUN_8K_SERVER_DOCKER.sh 2>&1 | tee /opt/run8k/c
 
 | Переменная | Назначение | Default |
 |---|---|---|
-| `REPO_URL` | git-адрес кода+данных | `https://github.com/TagirovAlex/bio-connectome-8k.git` |
+| `REPO_URL` | git-адрес кода+данных | `https://github.com/TagirovAlex/bio-connectome-cl.git` |
 | `PUSH_TO` | remote для записи результатов | `=${REPO_URL}` |
 | `GIT_TOKEN` | PAT для push | — |
 | `BRANCH` | ветка | `main` |
@@ -79,7 +79,7 @@ GIT_TOKEN="ghp_..." bash scripts/RUN_8K_SERVER_DOCKER.sh 2>&1 | tee /opt/run8k/c
 
 ## Контрольная машина — забрать результаты
 ```bash
-git clone https://github.com/TagirovAlex/bio-connectome-8k.git   # или git pull
+git clone https://github.com/TagirovAlex/bio-connectome-cl.git   # или git pull
 # опционально: загрузить таблицы/фигуры, интерпретировать
 ```
 Рекомендуется затем локально собрать сводный отчёт (как для 2K) и зафиксировать

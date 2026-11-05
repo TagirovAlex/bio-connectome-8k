@@ -8,7 +8,7 @@ authors:
   - family-names: Tagirov
     given-names: Alex
     alias: TagirovAlex
-repository-code: "https://github.com/TagirovAlex/bio-connectome-8k"
+repository-code: "https://github.com/TagirovAlex/bio-connectome-cl"
 abstract: >
   Проверка гипотезы о том, что модульная топология зрительного пути дрозофилы
   (FlyWire v783) снижает катастрофическое забывание в последовательном
