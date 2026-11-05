@@ -40,5 +40,5 @@ echo "[bootstrap] clone ${REPO_URL} (${BRANCH})"
 GIT_TERMINAL_PROMPT=0 git clone --branch "${BRANCH}" "${REPO_URL}" "${WORK}/repo"
 
 echo "[bootstrap] запуск RUN_8K_SERVER_DOCKER.sh (GIT_TOKEN=${TOKEN:+...передан})"
-exec env GIT_TOKEN="${TOKEN}" "${WORK}/repo/scripts/RUN_8K_SERVER_DOCKER.sh" \
+exec env GIT_TOKEN="${TOKEN}" bash "${WORK}/repo/scripts/RUN_8K_SERVER_DOCKER.sh" \
     2>&1 | tee /opt/run8k/console.log
