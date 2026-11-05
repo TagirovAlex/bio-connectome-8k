@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Если вы используете этот код или результаты, процитируйте проект."
+title: "Топология коннектома дрозофилы и катастрофическое забывание в continual RL: отрицательный результат на масштабе 2K"
+version: "2k-2026-11-05"
+date-released: 2026-11-05
+license: MIT
+authors:
+  - family-names: Tagirov
+    given-names: Alex
+    alias: TagirovAlex
+repository-code: "https://github.com/TagirovAlex/bio-connectome-8k"
+abstract: >
+  Проверка гипотезы о том, что модульная топология зрительного пути дрозофилы
+  (FlyWire v783) снижает катастрофическое забывание в последовательном
+  обучении с подкреплением. На масштабе 2K (15 прогонов, 5 архитектур × 3 сида)
+  эффект не обнаружен; результат относится к классу моделей «замороженная
+  топология + обучение только весов».
+keywords:
+  - connectome
+  - Drosophila
+  - FlyWire
+  - continual learning
+  - catastrophic forgetting
+  - reinforcement learning
+  - graph neural networks

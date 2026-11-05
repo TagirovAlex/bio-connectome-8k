@@ -1,0 +1,27 @@
+﻿# ==== Данные: сырые CSV не публикуем (~290 МБ), готовые графы публикуем ====
+data/raw/*
+!data/raw/.gitkeep
+
+# ==== Тяжёлые артефакты прогонов ====
+results/logs/
+results/checkpoints/
+
+# ==== Окружение и кэши ====
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.ruff_cache/
+wandb/
+
+# ==== Временное и инструменты агента ====
+temp/
+.opencode/
+skills/
+prompts/
+opencode.json
+init.md
+
+# ==== Бинарники: публикуем только готовые графы data/processed/*.pt ====
+*.pt
+!data/processed/*.pt

@@ -1,0 +1,74 @@
+{
+  "scale": "8k",
+  "n_runs": 2,
+  "per_arch": {
+    "bio": {
+      "forgetting": {
+        "mean": 0.7046618775168563,
+        "std": 0.0,
+        "n": 1
+      },
+      "final_reward_t1": {
+        "mean": -2.9255165925855824,
+        "std": 0.0,
+        "n": 1
+      },
+      "final_reward_t2": {
+        "mean": -2.758405028121875,
+        "std": 0.0,
+        "n": 1
+      },
+      "raw_forgetting": [
+        0.7046618775168563
+      ],
+      "raw_final_reward_t1": [
+        -2.9255165925855824
+      ],
+      "raw_final_reward_t2": [
+        -2.758405028121875
+      ],
+      "n": 1
+    },
+    "rewired": {
+      "forgetting": {
+        "mean": 1.5716083936527623,
+        "std": 0.0,
+        "n": 1
+      },
+      "final_reward_t1": {
+        "mean": -4.48792417682057,
+        "std": 0.0,
+        "n": 1
+      },
+      "final_reward_t2": {
+        "mean": -3.2654207076062267,
+        "std": 0.0,
+        "n": 1
+      },
+      "raw_forgetting": [
+        1.5716083936527623
+      ],
+      "raw_final_reward_t1": [
+        -4.48792417682057
+      ],
+      "raw_final_reward_t2": [
+        -3.2654207076062267
+      ],
+      "n": 1
+    }
+  },
+  "tests": [
+    {
+      "a": "bio",
+      "b": "rewired",
+      "n_a": 1,
+      "n_b": 1,
+      "statistic": null,
+      "p_value": null,
+      "direction": "bio_lower",
+      "note": "n=1 qualitative check"
+    }
+  ],
+  "timestamp": "2026-09-16T20:29:59.874558+00:00",
+  "config_hash": "b097c956"
+}

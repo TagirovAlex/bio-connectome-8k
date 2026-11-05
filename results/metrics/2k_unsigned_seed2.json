@@ -1,0 +1,57 @@
+{
+  "run_id": "unsigned_2k_seed2",
+  "graph": "unsigned_2k",
+  "architecture": "unsigned",
+  "seed": 2,
+  "tasks": [
+    "task1_goto",
+    "task2_avoid"
+  ],
+  "results": {
+    "task1_goto": {
+      "reward_after_task1": 3.9055324916597915,
+      "final_reward": 3.758297952382853,
+      "reward_after_task2": 3.758297952382853,
+      "forgetting": 0.14723453927693875,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        -850.7893113292989,
+        -143.952417095226,
+        -146.40748836396878,
+        -234.57663365426563,
+        1.1278848787544178,
+        5.298836948780267,
+        4.4119599710582,
+        4.417311779607171,
+        4.523545142813002,
+        4.253986768589947,
+        4.013048467312654
+      ],
+      "timesteps": 200000
+    },
+    "task2_avoid": {
+      "reward_after_task2": 2.5697389074333676,
+      "final_reward": 2.5697389074333676,
+      "forward_transfer": null,
+      "forward_transfer_steps": null,
+      "learning_steps_to_threshold": null,
+      "learning_curve": [
+        2.7704764015353107,
+        4.4548767149272805,
+        2.2326400956490913,
+        3.8282641682811573,
+        4.124921621068743,
+        4.929977791255117,
+        3.616889402976761,
+        4.957599231196235,
+        2.0121564695633096,
+        1.315721076108212
+      ],
+      "timesteps": 200000
+    }
+  },
+  "config_hash": "7d6f4e48",
+  "timestamp": "2026-11-04T21:12:45.832962+00:00",
+  "scale": "2k",
+  "elapsed_seconds": 12422.26744222641
+}

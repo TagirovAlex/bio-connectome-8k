@@ -1,0 +1,68 @@
+{
+  "bio_2k": {
+    "modularity_score": 0.6840807050199702,
+    "mean_degree": 42.023,
+    "recurrence_fraction": 0.3100207029483854,
+    "reciprocity": 0.3100207029483854,
+    "avg_path_length": 3.127087543771886,
+    "n_modules": 10,
+    "density": 0.010511005502751376,
+    "n_nodes": 2000,
+    "n_edges": 42023
+  },
+  "rewired_2k": {
+    "modularity_score": 0.279913034198638,
+    "mean_degree": 42.023,
+    "recurrence_fraction": 0.025319467910430004,
+    "reciprocity": 0.025319467910430004,
+    "avg_path_length": 2.3978849424712356,
+    "n_modules": 25,
+    "density": 0.010511005502751376,
+    "n_nodes": 2000,
+    "n_edges": 42023
+  },
+  "random_er_2k": {
+    "modularity_score": 0.1538283744320296,
+    "mean_degree": 42.023,
+    "recurrence_fraction": 0.00947100397401423,
+    "reciprocity": 0.00947100397401423,
+    "avg_path_length": 2.3873246623311655,
+    "n_modules": 14,
+    "density": 0.010511005502751376,
+    "n_nodes": 2000,
+    "n_edges": 42023
+  },
+  "unsigned_2k": {
+    "modularity_score": 0.6840807050199702,
+    "mean_degree": 42.023,
+    "recurrence_fraction": 0.3100207029483854,
+    "reciprocity": 0.3100207029483854,
+    "avg_path_length": 3.127087543771886,
+    "n_modules": 10,
+    "density": 0.010511005502751376,
+    "n_nodes": 2000,
+    "n_edges": 42023
+  },
+  "bio_8k": {
+    "modularity_score": 0.6414695549436422,
+    "mean_degree": 56.14175,
+    "recurrence_fraction": 0.24471093259472673,
+    "reciprocity": 0.24471093259472673,
+    "avg_path_length": 3.0229710276284534,
+    "n_modules": 12,
+    "density": 0.003509298037254657,
+    "n_nodes": 8000,
+    "n_edges": 224567
+  },
+  "rewired_8k": {
+    "modularity_score": 0.1904591085118231,
+    "mean_degree": 56.14175,
+    "recurrence_fraction": 0.010936602439361082,
+    "reciprocity": 0.010936602439361082,
+    "avg_path_length": 2.555419021127641,
+    "n_modules": 32,
+    "density": 0.003509298037254657,
+    "n_nodes": 8000,
+    "n_edges": 224567
+  }
+}

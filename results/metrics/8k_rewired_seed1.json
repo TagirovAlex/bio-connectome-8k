@@ -1,0 +1,31 @@
+{
+  "run_id": "rewired_8k_seed1",
+  "graph": "rewired_8k",
+  "architecture": "rewired",
+  "seed": 1,
+  "tasks": [
+    "task1_goto",
+    "task2_avoid"
+  ],
+  "results": {
+    "task1_goto": {
+      "reward_after_task1": -838.3687666003361,
+      "final_reward": -1168.8538131087982,
+      "reward_after_task2": -1168.8538131087982,
+      "forgetting": 330.4850465084621,
+      "learning_steps_to_threshold": null
+    },
+    "task2_avoid": {
+      "reward_after_task2": -898.9893080745962,
+      "final_reward": -898.9893080745962,
+      "forward_transfer": null,
+      "forward_transfer_steps": null,
+      "learning_steps_to_threshold": null
+    }
+  },
+  "config_hash": "7d6f4e48",
+  "timestamp": "2026-11-05T06:43:54.600202+00:00",
+  "scale": "8k",
+  "elapsed_seconds": 402.8613202571869,
+  "dry_run": true
+}

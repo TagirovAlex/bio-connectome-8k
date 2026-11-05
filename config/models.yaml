@@ -1,0 +1,17 @@
+﻿gnn:
+  hidden_dim:
+    2k: 64
+    8k: 128
+  # Глубина message passing должна покрывать путь сенсоры -> моторы:
+  # 2K (bio): 5-7 хопов, 8K (bio): 4-5 хопов. При 3 шагах моторные узлы
+  # недостижимы и признаки/градиенты строго нулевые (диагностика 2026-11).
+  n_propagation_steps:
+    2k: 7
+    8k: 5
+  activation: "tanh"
+  aggregation: "sum"
+mlp:
+  hidden_dim: 256
+  n_layers: 3
+  activation: "relu"
+device: "cuda"
